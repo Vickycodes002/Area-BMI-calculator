@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area & BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Area & BMI Calculator</h1>
+        <p>Calculate various areas and your Body Mass Index (BMI).</p>
+    </header>
+    <main>
+        <!-- Triangle Area -->
+        <section>
+            <h2>Calculate Area of a Triangle</h2>
+            <label for="triangle-base">Base (m):</label>
+            <input type="number" id="triangle-base" step="any">
+            <label for="triangle-height">Height (m):</label>
+            <input type="number" id="triangle-height" step="any">
+            <button onclick="calculateTriangleArea()">Calculate</button>
+            <p id="triangle-result"></p>
+        </section>
+
+        <!-- Square Area -->
+        <section>
+            <h2>Calculate Area of a Square</h2>
+            <label for="square-side">Side (m):</label>
+            <input type="number" id="square-side" step="any">
+            <button onclick="calculateSquareArea()">Calculate</button>
+            <p id="square-result"></p>
+        </section>
+
+        <!-- Circle Area -->
+        <section>
+            <h2>Calculate Area of a Circle</h2>
+            <label for="circle-radius">Radius (m):</label>
+            <input type="number" id="circle-radius" step="any">
+            <button onclick="calculateCircleArea()">Calculate</button>
+            <p id="circle-result"></p>
+        </section>
+
+        <!-- Quadrilateral Area -->
+        <section>
+            <h2>Calculate Area of a Quadrilateral</h2>
+            <label for="quad-side1">Side 1 (m):</label>
+            <input type="number" id="quad-side1" step="any">
+            <label for="quad-side2">Side 2 (m):</label>
+            <input type="number" id="quad-side2" step="any">
+            <button onclick="calculateQuadrilateralArea()">Calculate</button>
+            <p id="quad-result"></p>
+        </section>
+
+        <!-- Rhombus Area -->
+        <section>
+            <h2>Calculate Area of a Rhombus</h2>
+            <label for="rhombus-d1">Diagonal 1 (m):</label>
+            <input type="number" id="rhombus-d1" step="any">
+            <label for="rhombus-d2">Diagonal 2 (m):</label>
+            <input type="number" id="rhombus-d2" step="any">
+            <button onclick="calculateRhombusArea()">Calculate</button>
+            <p id="rhombus-result"></p>
+        </section>
+
+        <!-- Trapezium Area -->
+        <section>
+            <h2>Calculate Area of a Trapezium</h2>
+            <label for="trapezium-base1">Base 1 (m):</label>
+            <input type="number" id="trapezium-base1" step="any">
+            <label for="trapezium-base2">Base 2 (m):</label>
+            <input type="number" id="trapezium-base2" step="any">
+            <label for="trapezium-height">Height (m):</label>
+            <input type="number" id="trapezium-height" step="any">
+            <button onclick="calculateTrapeziumArea()">Calculate</button>
+            <p id="trapezium-result"></p>
+        </section>
+
+        <!-- Parallelogram Area -->
+        <section>
+            <h2>Calculate Area of a Parallelogram</h2>
+            <label for="parallelogram-base">Base (m):</label>
+            <input type="number" id="parallelogram-base" step="any">
+            <label for="parallelogram-height">Height (m):</label>
+            <input type="number" id="parallelogram-height" step="any">
+            <button onclick="calculateParallelogramArea()">Calculate</button>
+            <p id="parallelogram-result"></p>
+        </section>
+
+        <!-- BMI -->
+        <section>
+            <h2>Calculate BMI</h2>
+            <label for="bmi-weight">Weight (kg):</label>
+            <input type="number" id="bmi-weight" step="any">
+            <label for="bmi-height">Height (m):</label>
+            <input type="number" id="bmi-height" step="any">
+            <button onclick="calculateBMI()">Calculate</button>
+            <p id="bmi-result"></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
